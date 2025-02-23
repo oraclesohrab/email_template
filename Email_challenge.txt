@@ -1,0 +1,84 @@
+Using the included assets, code an email that is 640px wide on desktop and changes to Mobile view layout when viewed in a device which screen is 450px wide or less. Provide the finished email as an HTML file and include the assets used.
+
+On Desktop view, it has a 1-column Top Section, a 2-column Middle Section and a 2-column Bottom Section
+
+The Top Section 
+===============
+Use the following layout in this order:
+
+Top Header
+TopImage
+Top subhead
+Top linked button
+
+Use a grey background and black text
+On Desktop and Mobile is 100% the width of the email
+
+Should use different images for Desktop and Mobile devices.
+Desktop image should be centered and displayed at 576px wide
+The Mobile image should be centered and 90% of the email width
+
+For the linked button, use "Click here" as copy AND use rounded corners that work on all devices and email clients.
+Use white text and green background for the linked button
+
+
+
+The Middle Section
+==================
+Use a white background and black text
+On Desktop, is 90% the width of the email
+On Mobile instead of 90% of the email width, it has a 20px padding left and right
+
+Use this layout for Desktop view:
+
+Image1	Image2
+Text1	Text2
+
+Image3	Image4
+Text3	Text4
+
+Image5	Image6
+Text5	Text6
+
+
+Mobile view should render like this:
+
+Image2
+Text2
+
+Image1
+Text1
+
+Image4
+Text2
+
+Image3
+Text1
+
+Image6
+Text2
+
+Image5
+Text1
+
+
+The Bottom Section
+================== 
+Use a black background and white text
+On Desktop, is 90% the width of the email
+On Mobile instead of 90% of the email width, it has a 20px padding left and right
+
+
+Use this layout for Desktop view:
+
+BottomImage	BottomText 
+
+
+Mobile view should render like this:
+
+BottomImage	
+BottomText 
+
+For BottomText, use 3 lines of copy that have hard breaks at their end AND remove the line breaks when the email is viewed on a Mobile device so the copy wraps, without line breaks,  in the available space as needed
+
+Have fun!
