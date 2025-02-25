@@ -8,7 +8,7 @@ SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 EMAIL_SENDER = "sender_email"
 EMAIL_SENDER_NAME = "sender_name"
-EMAIL_PASSWORD = "sender_app_password_"
+EMAIL_PASSWORD = "sender_app_password"
 EMAIL_RECIPIENT = "recipient_mail"
 
 
