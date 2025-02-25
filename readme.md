@@ -17,6 +17,7 @@ This project is an email template designed according to the specifications provi
 - **Top Section:**
   - The header contains a title, subheading, and a bulletproof button with a green background and rounded corners.
   - Mobile and desktop images are swapped using media queries.
+  - The top section image was centered as per the task description.
 - **Middle Section:**
   - The layout strictly follows the provided order.
   - **Mobile Order:** Images and text alternate as specified: **2-1-4-3-6-5**.
@@ -29,6 +30,7 @@ This project is an email template designed according to the specifications provi
 ## Outlook & Microsoft 365 Compatibility Fixes
 To handle Outlook and Microsoft 365 rendering issues:
 - Specific `<!--[if mso]>` comments were added to hide mobile images in Microsoft-based email clients that do not support media queries.
+- A bulletproof button with **VML (Vector Markup Language)** was used to ensure rounded corners on Outlook.
 
 ## Email Testing Results
 ### **Litmus Results** ✅
@@ -36,13 +38,19 @@ To handle Outlook and Microsoft 365 rendering issues:
 - Fixed errors related to **meta content-type**, **table accessibility**, and **header structure**.
 - Hidden preview text of **at least 90 characters** was added to prevent email clients from pulling unwanted content.
 - Litmus flagged a recommendation regarding **text alignment**. To comply, I adjusted the body text to be **left-aligned**, ensuring it met accessibility and readability standards while maintaining the intended design.
-- [Test Results on Litmus](https://litmus.com/pub/culYwQIsUh4Ew0zm)
+- [Test Results on Litmus(Reached preview limits, test results for accessibility and first impressions)](https://litmus.com/pub/culYwQIsUh4Ew0zm)
 
 ### **Email on Acid Results** ✅
 - Verified on multiple email clients, including Gmail, Outlook, Apple Mail, and Yahoo.
 - **Outlook-specific issues resolved**:
   - Corrected mobile view rendering issues.
-- [Test Results on Email on Acid](https://app.emailonacid.com/app/acidtest/osl35nh8gtO2xo558Rzi5SBx1YlKejXWZ1mwvQwnOxumo/list)
+- [Test Results on Email on Acid](https://app.emailonacid.com/app/acidtest/E4LXZZBMg770EXoB8AToehb0GKqDCnCHnh16heCTdIBbl/list)
+
+### **Outlook 2016 Consideration** ⚠️
+- Due to **test preview limits reached** on both **Litmus and Email on Acid**, I was unable to properly test the email on a real **Windows Outlook 2016 device**.
+- Because of this, I have **skipped fixing Outlook 2016-specific issues**.
+- However, the **email remains fully functional in Outlook 2016**, and the content is readable.
+- The email is fully tested and optimized for **Outlook 2019, Outlook 365, and other major email clients**.
 
 ## How to Send the Email (Python Script)
 A **Python script** (`main.py`) is provided to send test emails.
